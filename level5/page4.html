@@ -77,7 +77,10 @@ var TxtType = function(el, toRotate, period) {
   background-color:black;
   text-align: center;
   color:#fff;
-padding-top: 350px;
+}
+        .container {
+	padding-top: 350px;
+
 }
 
 * { color:#fff; text-decoration: none;}
@@ -115,15 +118,50 @@ padding-top: 350px;
         }
         
         
+
+ .arrow a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    transition: background-color 0.5s ease;
+
+}
+
+. arrow a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.previous {
+    background-color: #f1f1f1;
+    color: black;
+    opacity: .5;
+    float: left
+
+}
+
+.next {
+    background-color: #f1f1f1;
+    color: black;
+    float: right;
+    opacity: .5;
+}
+
+.round {
+    border-radius: 50%;
+}
+
     </style>
     <body>
-        <h1>
+       <div class="arrow"> <a href="page3.html" class="previous round">&#8249;</a>
+        <a href="page5.html" class="next round">&#8250;</a></div>
+        <div class="container"><h1>
   <a href="" class="typewrite" data-period="2000" data-type='[ "[Persian Letters]", "By Solmaz Sharif", "Dear Aleph,", "Like Ovid: I’ll have no last words.",
         "This is what it means to die among barbarians.",
         " <em>Bar bar bar</em> ", "was how the Greeks heard our speech —","sheep, beasts — and so we became", "barbarians. We make them reveal",
        "the brutes they are, Aleph, by the things", "we make them name. David,", "they tell me, is the one",
         "one should aspire to, but ever since", "I first heard them say <em>Philistine</em> ", "I’ve known I am Goliath", "if I am anything." ]'>
-      <span class="wrap"></span></a></h1>
+      <span class="wrap"></span></a></h1></div>
 
     </body>
 </html>
